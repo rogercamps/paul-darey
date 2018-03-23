@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'universe';
+  src: url('/fonts/universe.ttf') forat('truetype');
+}
+
+body {
+  font-family: 'universe', sans-serif;
+  color: grey;
+  background-color: black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
