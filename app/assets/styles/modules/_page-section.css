@@ -1,0 +1,15 @@
+.page-section {
+  padding: .5rem 0;
+
+  @mixin atMedium {
+    padding: 4.5rem 0;
+  }
+  
+
+  &--gray {
+    background-color: lightgray;
+    color: black;
+  }
+
+
+}
