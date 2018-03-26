@@ -456,15 +456,30 @@ template {
 }
 
 body {
-  font-family: 'universe', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   color: grey;
   background-color: black;
+}
+
+.large-hero__title {
+  font-family: 'universe', sans-serif;
+  color: white;
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* 
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+} */
 
 .large-hero {
   border-bottom: 10px solid;
@@ -574,6 +589,6 @@ img {
   }}
 
 .paragraph {
-  font-family: 'Poiret One', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 100;
 }
