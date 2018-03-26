@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+#social {
+  background-color: lightgrey;
+  color: black;
+}
 /* 
 p {
   font-family: 'Open Sans Condensed', sans-serif;
