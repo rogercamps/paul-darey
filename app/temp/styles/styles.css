@@ -471,11 +471,6 @@ img {
   height: auto;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
 #social {
   background-color: lightgrey;
   color: black;
@@ -497,6 +492,7 @@ p {
   }
 
 .large-hero__text-content {
+    padding-top: 88px;
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -531,7 +527,7 @@ p {
       font-size: 8.8rem
   }}
 
-.btn {
+/* .btn {
   background-color: #505050;
   color: white;
   text-decoration: none;
@@ -539,7 +535,7 @@ p {
   display: inline-block;
   overflow: hidden;
   border-radius: 10px;
-}
+} */
 
 .wrapper {
   padding-left: 18px;
@@ -645,3 +641,93 @@ p {
   padding: .5rem 0;
   text-align: center;
 }
+
+.site-header {
+  padding: 10px 0;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+
+
+  /* @mixin atMedium {
+    display: block;
+
+  } */
+}
+
+@media (min-width: 800px) {
+
+.site-header {
+    background-color: rgba(40,40,40, .3)
+}}
+
+/* 
+  &__btn-container {
+    float: right;
+  } */
+
+.site-header__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    /* background-color: black; */
+    padding: 10px 90px 10px;
+    max-width: 100px;
+  }
+
+@media (min-width: 800px) {
+
+.site-header__logo {
+      left: auto;
+      -webkit-transform: translateX(0);
+              transform: translateX(0)
+  }}
+
+.site-header__menu-icon {
+    width: 20px;
+    height: 20px;
+    background: white;
+    position: absolute;
+    top: 10px;
+    right:10px;
+  }
+
+@media (min-width: 800px) {
+
+.site-header__menu-icon {
+      display: none
+  }}
+
+.primary-nav--pull-right {
+    float: right;
+  }
+
+.primary-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+.primary-nav ul::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.primary-nav li {
+    list-style: none;
+    float: left;
+    padding: 12px 12px;
+  }
+
+.primary-nav a {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+    padding: 2px 50px 12px 0;
+    font-size: 24px;
+  }

@@ -11,30 +11,57 @@
 
 <link rel="stylesheet" href="temp/styles/styles.css">
 <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
   <header class="site-header">
-    <!-- <img src="assets/images/logo--paul-darey-white.jpg"> -->
-    <a href="#" class="btn">CONTACT</a>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#music">Music</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="wrapper">
+      <div class="site-header__logo">
+        <img src="assets/images/logo--paul-darey-white.png">
+      </div>
+    </div>
+
+    <div class="site-header__menu-icon"></div>
+
+
+
+
+
+    <!-- <div class="wrapper"> -->
+      <div class="site-header__menu-content">
+        <!-- <div class="site-header__btn-container"> -->
+        <!-- <a href="#" class="btn">CONTACT</a> -->
+      <!-- </div> -->
+      <nav class="primary-nav primary-nav--pull-right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    <!-- </div> -->
   </header>
 
   <div class="large-hero">
     <picture>
       <source srcset="assets/images/hero--emy-very-large.jpg" media="(min-width: 1380px)">
-      <source srcset="assets/images/hero--emy-large.jpg" media="(min-width: 800px)">
-      <source srcset="assets/images/hero--emy-medium.jpg" media="(min-width: 640px)"> 
+      <source srcset="assets/images/hero--emy-very-large.jpg" media="(min-width: 800px)">
+      <source srcset="assets/images/hero--emy-very-large.jpg" media="(min-width: 640px)"> 
       <img src="assets/images/hero--emy-small.jpg" alt="paul Darey" class="large-hero__image">
     </picture>
 
     <div class="large-hero__text-content">
       <div class="wrapper">
-        <h1 class="large-hero__title">Paul Darey</h1>
+        <!-- <h1 class="large-hero__title">Paul Darey</h1> -->
       </div>
     </div>
   </div>
@@ -72,9 +99,12 @@
 
   <div id="social" class="page-section page-section--gray">
     <div class="wrapper">
-      <img src="assets/images/icons/star.svg">
       <h2>Catch up with me</h2>
     
+      <div class="fb-page" data-href="https://www.facebook.com/pauldarey" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/pauldarey" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pauldarey">Facebook</a></blockquote></div>
+
+
+
       <img src="assets/images/icons/rain.svg">
       <h3>We&rsquo;ll Watch the Weather</h3>
       <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>
