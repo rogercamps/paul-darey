@@ -1,7 +1,6 @@
 .page-section {
   padding: .5rem 0;
 
-
   @mixin atMedium {
     padding: 4.5rem 0;
   }
@@ -12,9 +11,16 @@
     color: lightgray;
   }
 
-  &--social {
-    background-color: red;
+  &--row-equal-at-medium {
+    @mixin atMedium {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
   }
   
-
+  
 }

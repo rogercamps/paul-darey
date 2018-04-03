@@ -23,7 +23,7 @@ img {
   background-color: lightgrey;
   color: black;
 }
-/* 
-p {
-  font-family: 'Open Sans Condensed', sans-serif;
-} */
+
+.soundcloud-iframe {
+  width: 100%;
+}

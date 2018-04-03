@@ -20,7 +20,7 @@
     transform-origin: 50% 50%;
     /* background-color: black; */
     padding: 10px 90px 10px;
-    max-width: 100px;
+    max-width: 12%;
 
     @mixin atMedium {
       left: auto;
